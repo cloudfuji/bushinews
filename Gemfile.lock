@@ -1,5 +1,6 @@
-PATH
-  remote: /Users/kevisazombie/Projects/web/bushidogem
+GIT
+  remote: git@github.com:Bushido/bushidogem.git
+  revision: 11e387aa5274fde769247f0e5ce64ae4a72699f3
   specs:
     bushido (0.0.21)
       highline (>= 1.6.1)

@@ -1,4 +1,6 @@
 EngineTest::Application.routes.draw do
+  resources :users
+
   resources :beta_users
 
   # The priority is based upon order of creation:

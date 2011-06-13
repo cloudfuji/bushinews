@@ -1,5 +1,5 @@
-Bushido::Hooks.listen do |hook, data|
-  puts "OMG BUSHI HOOK"
+Bushido::Envs.listen do |hook, data|
+  puts "OMG BUSHI Envs"
   puts hook.inspect
 end
 
