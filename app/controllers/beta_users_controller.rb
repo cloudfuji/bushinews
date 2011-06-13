@@ -3,7 +3,7 @@ class BetaUsersController < ApplicationController
   # GET /beta_users.xml
   def index
     @beta_users = BetaUser.all
-
+    #cool
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @beta_users }
