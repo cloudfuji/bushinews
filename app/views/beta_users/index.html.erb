@@ -1,0 +1,31 @@
+<h1>Listing beta_users</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Email</th>
+    <th>Bushido data</th>
+    <th>Bushido version</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @beta_users.each do |beta_user| %>
+  <tr>
+    <td><%= beta_user.first_name %></td>
+    <td><%= beta_user.last_name %></td>
+    <td><%= beta_user.email %></td>
+    <td><%= beta_user.bushido_data_id %></td>
+    <td><%= beta_user.bushido_version %></td>
+    <td><%= link_to 'Show', beta_user %></td>
+    <td><%= link_to 'Edit', edit_beta_user_path(beta_user) %></td>
+    <td><%= link_to 'Destroy', beta_user, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Beta user', new_beta_user_path %>

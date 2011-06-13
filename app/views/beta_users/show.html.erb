@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @beta_user.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @beta_user.last_name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @beta_user.email %>
+</p>
+
+<p>
+  <b>Bushido data:</b>
+  <%= @beta_user.bushido_data_id %>
+</p>
+
+<p>
+  <b>Bushido version:</b>
+  <%= @beta_user.bushido_version %>
+</p>
+
+
+<%= link_to 'Edit', edit_beta_user_path(@beta_user) %> |
+<%= link_to 'Back', beta_users_path %>
