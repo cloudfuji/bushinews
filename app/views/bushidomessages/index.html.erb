@@ -10,7 +10,11 @@
 
 <% @bushidomessages.each do |bushidomessage| %>
   <tr>
-    <td><%= bushidomessage.data %></td>
+    <td><ul>
+      <% bushidomessage.data.each_pair do |k,v| %>
+         <li><span><%= k %></span><span><%= v %></span></li>
+      <% end %>
+    </ul></td>
     <td><%= link_to 'Show', bushidomessage %></td>
     <td><%= link_to 'Edit', edit_bushidomessage_path(bushidomessage) %></td>
     <td><%= link_to 'Destroy', bushidomessage, :confirm => 'Are you sure?', :method => :delete %></td>
