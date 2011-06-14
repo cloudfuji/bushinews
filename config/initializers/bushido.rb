@@ -4,7 +4,7 @@ Bushido::Envs.listen do |hook, data|
 end
 
 Bushido::Data.listen do |data, hook|
-  b = BushidoMessage.new
+  b = Bushidomessage.new
   b.data = data
   b.save
 end
