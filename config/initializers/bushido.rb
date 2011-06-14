@@ -3,8 +3,8 @@ Bushido::Envs.listen do |hook, data|
   puts hook.inspect
 end
 
-Bushido::Data.listen do |hook, data|
-  puts "OMG BUSHI DATA"
-  puts hook.inspect
-  puts data.inspect
+Bushido::Data.listen do |data, hook|
+  b = BushidoMessage.new
+  b.data = data
+  b.save
 end
