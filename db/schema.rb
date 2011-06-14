@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110613135858) do
+ActiveRecord::Schema.define(:version => 20110614203537) do
 
   create_table "beta_users", :force => true do |t|
     t.string   "first_name"
@@ -18,6 +18,12 @@ ActiveRecord::Schema.define(:version => 20110613135858) do
     t.string   "email"
     t.string   "bushido_data_id"
     t.string   "bushido_version"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "bushidomessages", :force => true do |t|
+    t.text     "data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
