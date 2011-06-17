@@ -1,7 +1,11 @@
 EngineTest::Application.routes.draw do
+  bushido_routes
+
   resources :bushidomessages
 
   resources :users
+
+  resources :leads
 
   resources :beta_users
 

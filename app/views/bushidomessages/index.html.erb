@@ -9,6 +9,7 @@
   </tr>
 
 <% @bushidomessages.each do |bushidomessage| %>
+<% puts bushidomessage.inspect %>
   <tr>
     <td><ul>
       <% bushidomessage.data.each_pair do |k,v| %>
@@ -30,5 +31,5 @@
 <script type="text/javascript">
   window.setTimeout(function(){
     window.location.href = "/";
-  }, 1500);
+  }, 500);
 </script>

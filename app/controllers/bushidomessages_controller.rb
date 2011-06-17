@@ -2,7 +2,7 @@ class BushidomessagesController < ApplicationController
   # GET /bushidomessages
   # GET /bushidomessages.xml
   def index
-    @bushidomessages = Bushidomessage.all
+    @bushidomessages = Bushidomessage.order("created_at DESC").all
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,0 +1,19 @@
+<form accept-charset="UTF-8" action="/leads" class="new_lead" id="new_lead" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"></div>
+  
+  
+  <div class="field">
+    <label for="leads_first_name">First Name</label><br>
+    <input cols="40" id="leads_data" name="lead[first_name]" rows="20"></textarea>
+  </div>
+  <div class="field">
+    <label for="leads_last_name">Last Name</label><br>
+    <input cols="40" id="leads_data" name="lead[last_name]" rows="20"></textarea>
+  </div>
+  <div class="field">
+    <label for="leads_first_email">Email</label><br>
+    <input cols="40" id="leads_data" name="lead[email]" rows="20"></textarea>
+  </div>
+  <div class="actions">
+    <input id="leada_submit" name="commit" type="submit" value="Create Customer Lead">
+  </div>
+</form>
