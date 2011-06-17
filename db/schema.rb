@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110614203537) do
+ActiveRecord::Schema.define(:version => 20110616215031) do
 
   create_table "beta_users", :force => true do |t|
     t.string   "first_name"
@@ -27,6 +27,17 @@ ActiveRecord::Schema.define(:version => 20110614203537) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "testers", :force => true do |t|
+    t.string   "bushido_id"
+    t.string   "bushido_version"
+    t.string   "cool"
+    t.string   "guise"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "testers", ["bushido_id"], :name => "index_testers_on_bushido_id", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "email"
