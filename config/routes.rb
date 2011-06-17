@@ -4,6 +4,7 @@ EngineTest::Application.routes.draw do
   resources :users
 
   resources :beta_users
+  bushido_routes
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
